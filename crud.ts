@@ -22,8 +22,17 @@ async function run () {
     // console.log("Post : ",createPost)
 
 
+    // create profile
+    const createProfile = await prisma.profile.create({
+        data : {
+            bio : "I am student",
+            userId: 1
+        }
+    })
 
-    
+    console.log(createProfile)
+
+
 }
 
 run()
