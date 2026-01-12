@@ -19,7 +19,7 @@ model User {
   email    String    @unique
   role     ROLE      @default(USER)
   posts    Post[]
-  profiles Profile?
+  profile Profile?
 }
 
 model Profile {
